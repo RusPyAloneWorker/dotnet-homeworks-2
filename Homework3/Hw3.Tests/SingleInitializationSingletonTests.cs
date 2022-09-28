@@ -14,7 +14,6 @@ public class SingleInitializationSingletonTests
         {
             i1 = SingleInitializationSingleton.Instance;
         });
-        SingleInitializationSingleton.Reset();
         var i2 = SingleInitializationSingleton.Instance;
         Assert.Equal(i2, i1);
         
